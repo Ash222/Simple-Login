@@ -1,0 +1,103 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100vw;
+    height: 100vh;
+}
+
+a {
+    color: rgb(59, 41, 2);
+    text-decoration: none;
+    font-weight: 550;
+}
+
+.login {
+    background-color: rgb(240, 140, 46);
+    width: 60%;
+    padding-top: 5%;
+}
+
+.login-form {
+    margin: auto;
+    background-color: rgb(202, 119, 40);
+    display: flex;
+    flex-flow: column wrap;
+    width: 50%;
+    height: 80%;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: 10px 10px 12px rgba(85, 57, 4, 0.842),
+        -10px -10px 12px rgba(218, 179, 108, 0.904);
+}
+
+.side-content {
+    background-color: rgb(226, 132, 25);
+    height: 100%;
+    width: 40%;
+}
+
+#password,
+#username {
+    width: 58%;
+    min-height: 40px;
+    outline: none;
+    background-color: rgb(202, 119, 40);
+    border-radius: 30px;
+    padding: 18px;
+    border: 2px solid rgb(245, 149, 6);
+    font-size: 18px;
+    box-shadow: inset 5px 5px 5px rgb(155, 102, 5),
+        inset -5px -5px 5px rgba(248, 145, 11, 0.918);
+}
+
+.login-form * {
+    margin-top: 30px;
+}
+
+#username {
+    margin-top: 38%;
+}
+
+input[type=submit] {
+    border-radius: 20px;
+    padding: 16px;
+    width: 30%;
+    font-size: 18px;
+    border: 2px solid rgb(165, 109, 5);
+    background-color: orange;
+}
+
+input[type=submit]:hover {
+    border: 2px solid rgb(165, 109, 5);
+    box-shadow: 4px 4px 8px rgb(90, 61, 8),
+        -4px -4px 8px rgb(214, 144, 14);
+}
+
+/* Just a small media query for devices with width 720px and smaller. */
+
+@media screen and (max-width:720px) {
+
+    .side-content {
+        display: none;
+    }
+
+    .login {
+        width: 100%;
+    }
+
+    #password,
+    #username {
+        width: 70%;
+    }
+
+}
