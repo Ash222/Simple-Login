@@ -20,14 +20,14 @@ a {
 }
 
 .login {
-    background-color: rgb(240, 140, 46);
+    background-color: rgb(218, 214, 214);
     width: 60%;
     padding-top: 5%;
 }
 
 .login-form {
     margin: auto;
-    background-color: rgb(202, 119, 40);
+    background-color: rgb(228, 225, 225);
     display: flex;
     flex-flow: column wrap;
     width: 50%;
@@ -36,12 +36,12 @@ a {
     justify-content: flex-start;
     padding: 10px;
     border-radius: 30px;
-    box-shadow: 10px 10px 12px rgba(85, 57, 4, 0.842),
-        -10px -10px 12px rgba(218, 179, 108, 0.904);
+    box-shadow: 10px 10px 12px rgb(187, 186, 184),
+        -10px -10px 12px #fff;
 }
 
 .side-content {
-    background-color: rgb(226, 132, 25);
+    background-color: rgb(211, 209, 206);
     height: 100%;
     width: 40%;
 }
@@ -51,13 +51,13 @@ a {
     width: 58%;
     min-height: 40px;
     outline: none;
-    background-color: rgb(202, 119, 40);
+    background-color: rgb(236, 232, 232);
     border-radius: 30px;
     padding: 18px;
-    border: 2px solid rgb(245, 149, 6);
+    border: 2px solid rgb(250, 248, 245);
     font-size: 18px;
-    box-shadow: inset 5px 5px 5px rgb(155, 102, 5),
-        inset -5px -5px 5px rgba(248, 145, 11, 0.918);
+    box-shadow: inset 8px 8px 10px rgb(173, 173, 171),
+        inset -8px -8px 10px rgb(255, 254, 254);
 }
 
 .login-form * {
@@ -72,15 +72,19 @@ input[type=submit] {
     border-radius: 20px;
     padding: 16px;
     width: 30%;
-    font-size: 18px;
-    border: 2px solid rgb(165, 109, 5);
-    background-color: orange;
+    font-size: 19px;
+    border: 2px solid rgb(252, 251, 249);
+    background-color: rgb(252, 251, 250);
+    box-shadow: inset 8px 8px 10px rgb(173, 173, 171),
+        inset -8px -8px 10px rgb(255, 254, 254);
+    font-weight: 600;
 }
 
 input[type=submit]:hover {
-    border: 2px solid rgb(165, 109, 5);
-    box-shadow: 4px 4px 8px rgb(90, 61, 8),
-        -4px -4px 8px rgb(214, 144, 14);
+    box-shadow: 4px 4px 8px rgb(138, 137, 137),
+        -4px -4px 8px rgb(241, 240, 238),
+        inset -8px -8px 10px rgb(173, 173, 171);
+    text-shadow: 6px 4px 4px rgb(49, 48, 48);
 }
 
 /* Just a small media query for devices with width 720px and smaller. */
